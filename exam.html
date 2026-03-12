@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head> 
-<title>
-"calculator"
-</title>
 <body>
-<p>number1 " + " number2 "="<p>
+
+<h2>Simple Calculator</h2>
+
+<input id="a">
+<input id="b">
+
+<button onclick="add()">Add</button>
+
+<p id="ans"></p>
+
+<script>
+function add(){
+let a=Number(document.getElementById("a").value);
+let b=Number(document.getElementById("b").value);
+document.getElementById("ans").innerHTML="Result: "+(a+b);
+}
+</script>
+
 </body>
 </html>
